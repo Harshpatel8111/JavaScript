@@ -43,7 +43,7 @@ let str3 = str1 + str2
 
 // console.log("1" +
 // 2);
-// console.log(2 + 2+ "1");
+// console.log(2 + 2+ "1"); // Here first datatype will be given first priority
 
 let counter = 100
 counter++
