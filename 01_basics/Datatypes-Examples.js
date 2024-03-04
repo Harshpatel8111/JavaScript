@@ -27,17 +27,52 @@ let bigNumber = 12321324124242n
 // Array, Object, Function
 
 let userList = ['Harsh', 'Patel', 'Bhole']
-console.log(typeof userList); // Object
+// console.log(typeof userList); // Object
 
 let userInfo = {
     Name : "Harsh",
     Age : 22
 }
-console.log(userInfo);
-console.log(typeof userInfo);
+// console.log(userInfo);
+// console.log(typeof userInfo);
 
 let myFunction = function myFun(params) {
     console.log("HII");   
 }
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
+
+// ----------------------------------------------------
+
+// Memory in JS
+
+// 1. stack : stack memory use in primitive
+// we get copy 
+
+
+// 2. Heap : heap memory in Nonprimitive store in
+// we get reference
+
+let myName = "Harsh"
+//console.log(myName);
+
+let FirstName = myName
+FirstName = "Patel"
+console.log(myName);
+console.log(FirstName);
+
+
+let useNote = {
+    Name: "Harsh",
+    Age: 22
+
+}
+//console.log(useNote);
+let useNote2 = useNote
+
+useNote2.Name = "Patel"
+
+console.log(useNote);
+console.log(useNote2);
+
+// In heap the value will change according to reference variable whereas in stack the value remain same as per variable.
