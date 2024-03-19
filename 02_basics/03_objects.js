@@ -18,13 +18,13 @@ const jsUser = {
 }
 
  console.log(jsUser["location"]);// Access the value
-// console.log(jsUser[mySymbol]); // how to define symbol in object IMP.
+ console.log(jsUser[mySymbol]); // how to define symbol in object IMP.
 
 
 jsUser.name = "HARSH PATEL"// Change the value of key of object
 
 
-// console.log(jsUser);
+console.log(jsUser);
 
 //Object.freeze(jsUser)// lock the object
 // jsUser.age = 5 // Not change due to freeze
@@ -47,7 +47,7 @@ const symbol1 = Symbol("mysymbol")
 const newObj = {
     [symbol1]: "key1"
 }
-console.log(newObj[symbol1]);
+console.log(typeof newObj[symbol1]);
 
 
 
