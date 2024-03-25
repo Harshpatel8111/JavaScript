@@ -57,7 +57,14 @@ const users = [
 ]
 
 
+const crickInfo = {
+    Batter : "Harsh",
+    Runs:"50",
+    status:"Notout"
+}
 
+const {Batter} = crickInfo
+console.log(Batter);
 
 
 
