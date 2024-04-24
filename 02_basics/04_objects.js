@@ -1,4 +1,4 @@
-// Decalre singleton object
+// Declare singleton object
 // const instagramUser = new Object()
 // console.log(instagramUser);
 
@@ -66,5 +66,8 @@ const crickInfo = {
 const {Batter} = crickInfo
 console.log(Batter);
 
+const {Runs} = crickInfo
+console.log(Runs);
+console.log(crickInfo.Runs);
 
 

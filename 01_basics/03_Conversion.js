@@ -17,9 +17,10 @@ let valueInNUmber = Number(score)
 
 // let isLoggedIn = 1
 let isLoggedIn = "Harsh"
+console.log(isLoggedIn);
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-// console.log(booleanIsLoggedIn);
+console.log(booleanIsLoggedIn);
 
 // // 1-> true
 // // 0-> false
@@ -43,7 +44,7 @@ let str3 = str1 + str2
 
 // console.log("1" +
 // 2);
-// console.log(2 + 2+ "1"); // Here first datatype will be given first priority
+ console.log(2 + 2+ "1"); // Here first datatype will be given first priority
 
 let counter = 100
 counter++

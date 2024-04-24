@@ -3,7 +3,7 @@
 // // 1. Primitive datatype (call by value):
 // // 7 types
 // // Number, String, Boolean, BigInt, null, undefined, Symbol
-
+// num, str, bool, symbol, un, bigint, null
 let score = 5
 // console.log(typeof score);
 
@@ -11,7 +11,7 @@ let User = "HARSH"
 // console.log(typeof User);
 
 let temprature = null
-// console.log(typeof temprature);// null give output as an Object
+console.log(typeof temprature);// null give output as an Object
 
  let City;
 // console.log(typeof City);
@@ -57,6 +57,7 @@ let myName = "Harsh"
 //console.log(myName);
 
 let FirstName = myName
+console.log(FirstName);
 FirstName = "Patel"
 console.log(myName);
 console.log(FirstName);
@@ -69,6 +70,7 @@ let useNote = {
 }
 //console.log(useNote);
 let useNote2 = useNote
+console.log(useNote2);
 
 useNote2.Name = "Patel"
 

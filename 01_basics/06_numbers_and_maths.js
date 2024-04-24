@@ -4,8 +4,9 @@ const age = 5 // First way to define number
 // Second way 
 
 const score = new Number(50)
-// console.log(score);
-
+console.log(score);
+const name = new String("Harsh")
+console.log(name);
 // console.log(score.toString());
 // console.log(score.toString().length);
 
@@ -34,3 +35,4 @@ const min = 10
 const max = 20
 console.log(Math.floor(Math.random() * (max-min+1))+min);
 
+console.log(Math.floor(Math.random()*(max-min+1))+min);

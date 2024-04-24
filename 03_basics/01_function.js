@@ -39,38 +39,45 @@
 // console.log(welcomeUser);
 
 //.............................................................................................................................................................
-const userdetails = {
-    Username: "Harsh",
-    Price: 200
-}
-function calculateCartPrice(anyobject) {
+// const userdetails = {
+//     Username: "Harsh",
+//     Price: 200
+// }
+// function calculateCartPrice(anyobject) {
 
-    // return `${anyobject.Username} has purchased ${anyobject.Price}`
+//     // return `${anyobject.Username} has purchased ${anyobject.Price}`
 
-    console.log(`${anyobject.Username} has purchased ${anyobject.Price}`);
+//     console.log(`${anyobject.Username} has purchased ${anyobject.Price}`);
     
-}
-// const cart = calculateCartPrice(userdetails)
-// console.log(cart);
+// }
+// // const cart = calculateCartPrice(userdetails)
+// // console.log(cart);
 
-calculateCartPrice({
-    Username: "Patel",
-    Price:3000
-})  // Pass Object
+// calculateCartPrice({
+//     Username: "Patel",
+//     Price:3000
+// })  // Pass Object
 
 
-let myArr = [1,2,3,4]
+// let myArr = [1,2,3,4]
 
-function arryHandle(anyarray) {
-    return anyarray[1]
+// function arryHandle(anyarray) {
+//     return anyarray[1]
 
     
+// }
+
+// // console.log(arryHandle(myArr));
+// console.log(arryHandle([1,3,4,5,51]));
+
+
+
+const newObj={
+    name:"Harsh"
 }
+function welcomeUser(myobj){
+    return `Welcome ${myobj.name}`
 
-// console.log(arryHandle(myArr));
-console.log(arryHandle([1,3,4,5,51]));
-
-
-
-
-
+}
+const welcome = welcomeUser(newObj)
+console.log(welcome);

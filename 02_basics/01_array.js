@@ -5,7 +5,7 @@ const Cricketers = ["Dhoni","Kohli","Raina","Rohit"]
 
 const myArr = new Array(1,2,3,4,5)
 // console.log(typeof(myArr));
-// console.log(myArr[1]);
+console.log(myArr[1]);
 
 // METHODS
 myArr.push(6)

@@ -1,6 +1,6 @@
 "use strict";// it will treat all Js code as newer version
 
-// alert("Hello") This is not working on browser not in nodejs
+// alert("Hello") This is working on browser not in nodejs
 
 let name = "Harsh"
 let age = 22

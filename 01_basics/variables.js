@@ -12,6 +12,7 @@ var accountPassword = "12345" // We do not use because of scope problem DO NOT U
 
 accountCity = "Ahemdabad"
 let accountState;
+console.log(typeof(accountState)); 
 
 // accountId = 2 // checking constant 
 accountEmail="harshpatel@google.com"

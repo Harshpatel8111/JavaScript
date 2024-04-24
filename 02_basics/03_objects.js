@@ -18,7 +18,7 @@ const jsUser = {
 }
 
  console.log(jsUser["location"]);// Access the value
- console.log(jsUser[mySymbol]); // how to define symbol in object IMP.
+ console.log(typeof(jsUser[mySymbol])); // how to define symbol in object IMP.
 
 
 jsUser.name = "HARSH PATEL"// Change the value of key of object
@@ -40,7 +40,7 @@ console.log(jsUser);
 jsUser.details = function(){
     console.log(`My name is ${this.name} and my age is ${this.age}`)
 }
-// console.log(jsUser.details());
+ console.log(jsUser.details());
 
 const symbol1 = Symbol("mysymbol")
 
@@ -49,6 +49,9 @@ const newObj = {
 }
 console.log(typeof newObj[symbol1]);
 
-
+jsUser.fname = function(){
+    console.log(`my name is ${this.name}`);
+}
+console.log(jsUser.fname());
 
 
