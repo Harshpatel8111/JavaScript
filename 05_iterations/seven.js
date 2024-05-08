@@ -22,7 +22,7 @@
 // console.log(myExample);
 
 //Reduce
-// Use ful in cart 
+// Use ful in cart to sum all the price
 let myArr = [1,2,3,4,5]
 let finalTotal=myArr.reduce(function (acc,curr) {
     return acc+curr
