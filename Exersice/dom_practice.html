@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body style="background-color: black;color: white;">
+    <div class="main">
+        <div class="number1">one</div>
+        <div class="number2">two</div>
+        <div class="number3">three</div>
+        <div class="number4">four</div>
+    </div>
+
+</body>
+<script>
+    const mainClass = document.querySelector('.main')
+    //console.log(mainClass);
+    for (let i = 0; i < mainClass.children.length; i++) {
+        // console.log(mainClass.children[1].innerText);
+        
+    }
+    console.log(mainClass.firstElementChild);
+    console.log(mainClass.lastElementChild);
+
+    const firstNum = document.querySelector('.number1')
+    const secondNum = document.querySelector('.number2')
+    console.log(firstNum);
+    console.log(firstNum.parentElement);
+    console.log(firstNum.nextElementSibling);
+    console.log(secondNum.previousElementSibling);
+</script>
+</html>
