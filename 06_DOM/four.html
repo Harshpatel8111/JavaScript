@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black;color: aliceblue;">
+    <ul class="lang">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(language){
+        const li = document.createElement('li')
+        li.innerHTML=`${language}`
+        document.querySelector('.lang').appendChild(li)
+    }
+    addlanguage('python')// This method is less optimized
+    // Optimized method
+    function addlang(languagename){
+        const li = document.createElement('li')
+        li.append(document.createTextNode(languagename))
+        document.querySelector('.lang').appendChild(li)
+
+    }
+    addlang('Rust')
+
+    // Edit 
+
+    const firstChild = document.querySelector('li:nth-child(1)')
+   // firstChild.innerHTML="HTML"// THrough innner HTML
+    //firstChild.outerHTML = "<li>CSS</li>"//Through outer HTML
+    const newLI = document.createElement('li')
+    newLI.textContent = "Go"
+    firstChild.replaceWith(newLI)
+
+    // Remove Element
+    const thirdElement = document.querySelector('li:nth-child(2)')
+    thirdElement.remove()
+</script>
+</html>
