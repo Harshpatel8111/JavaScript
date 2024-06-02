@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color:white;
+}
+.center{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+#clock{
+    display: flex;
+    height: 50px;
+    width:150px;
+    background-color: orange;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+#banner{
+    font-size: 20px;
+}
