@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: aliceblue;
+   
+}
+
+#wrapper{
+    background-color: grey;
+    height: 500px;
+    width: 400px;
+     text-align: center;
+    align-content: center;
+
+}
+#subt{
+    margin-top: 10px;
+    background-color: black;
+    height: 35px;
+    color: aliceblue;
+    border-radius: 5px;
+
+}
+
