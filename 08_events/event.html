@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <ul id = "images">
+        <li><img width="200px" id="elephant" src="https://images.pexels.com/photos/24244035/pexels-photo-24244035/free-photo-of-elephant-by-river.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"></img></li>
+        <li><img width="200px" id="light"src="https://images.pexels.com/photos/25466782/pexels-photo-25466782.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"></img></li>
+        <li><a id="google" href="https://google.com">Google</a></li>
+    </ul>
+</body>
+<script>
+    // document.querySelector('#light').addEventListener('click',function(e){
+    //     console.log("Light Clicked");
+    // },false) 
+
+    // Other mehthods : jQuery: on, attachevent, document.querySelector('#light').onlcick(function())
+
+    // Event propogation
+    // false : default : EVENT BUBBLING : First peint LIGHT THEN  print image
+    // true: EVENT CAPTURING  : Do reverse from flase
+    
+    
+    //  document.querySelector('#light').addEventListener('click',function(e){
+    //     console.log("Light Clicked");
+    //     e.stopPropagation(); // DO not bubble Means it will stop event after printing LIGHT CLICKED 
+    // },false) 
+
+    // document.querySelector('#images').addEventListener('click',function(e){
+    //     console.log("Image Clicked");
+    // },false) 
+
+    // document.querySelector('#google').addEventListener('click',function(e){
+    //     e.preventDefault(); /// Prevent to send the data to server
+    //     e.stopPropagation();
+    //     console.log("GOOGLE");
+    // })
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        if(e.target.tagName == 'IMG'){
+        const removeImage = e.target.parentNode 
+        removeImage.remove();
+        }
+    })
+</script>
+</html>

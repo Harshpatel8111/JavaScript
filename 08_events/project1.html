@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    
+
+    document.querySelector('#start').addEventListener('click',function(){
+        const hello = function(){
+        const hii = document.querySelector('h1').innerHTML = "Hello Harsh"
+      
+        }
+
+    const start = setInterval(hello,1000)
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(start)
+        document.querySelector('h1').innerHTML = "Hello"
+        
+    })
+})
+   
+</script>
+</html>
