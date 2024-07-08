@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <style>
+        body{
+            height: auto;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            height: 400px;
+            width: 400px;
+            background-color:aliceblue ;
+            color: black;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+
+            
+        }
+        .profile{
+            height: 150px;
+            width: 300px;
+           background-color: grey;
+           text-align: center;
+           margin-bottom: 10px;
+            
+
+        }
+        .followers{
+            height: 150px;
+            width: 300px;
+            
+            background-color: grey;
+            text-align: center;
+            /* padding-top: 10px; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="profile">  </div>
+        <span><div class="followers">followers count is : </div></span>
+        
+
+    </div>
+</body>
+<script>
+    const requestURL = 'https://api.github.com/users/Harshpatel8111';
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requestURL)
+    // console.log(xhr.readyState);
+    xhr.onreadystatechange = function(){
+        // console.log(xhr.readyState);
+        if(xhr.readyState == 4){
+        const data = JSON.parse(this.responseText)
+        // console.log(data.followers);
+        console.log(data.avatar_url);
+        const followers = data.followers
+        
+        const profile = data.avatar_url
+
+        console.log(followers)
+        
+        document.querySelector('.followers').innerHTML = ` Profile Name : ${followers}`
+        document.querySelector('.profile').innerHTML = `${profile}`
+        
+        }
+    }
+    xhr.send();
+    
+    
+</script>
+</html>
