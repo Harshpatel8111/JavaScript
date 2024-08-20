@@ -4,9 +4,9 @@ const myName1 = "Patel    "// How to find true length of these two strings
 const cars = ["BMW", "Mercedes"]
 const myCars = {
     name:"BMW",
-    Feature:"Comfort",
+    Feature:"Comfort",// Properties
     getfeature: function(){
-        console.log(`BMW has ${this.Feature}`);
+        console.log(`BMW has ${this.Feature}`);// Method
     }
 }
 Object.prototype.harsh = function(){
