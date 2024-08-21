@@ -15,7 +15,7 @@
             this.server = "https://localhost:3000"
 
             document.querySelector('button').addEventListener('click',this.handleClick.bind(this))
-        }
+        } // Here we have to use bind to take the reference or attach of all variable 
         handleClick(){
             console.log("Button Clicked");
             console.log(this.server);
